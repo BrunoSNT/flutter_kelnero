@@ -67,16 +67,26 @@ class _MyHomePageState extends State<MyHomePage> {
                     carouselHeight: 250.0,
                     items: [
                       NNCard(
-                          cardWidth: 250,
-                          innerWidget: InnerRestaurant(),
-                          image: Image.asset('assets/mc-c.png', height: 185.0, fit: BoxFit.cover,),)
+                        cardWidth: 250,
+                        innerWidget: InnerRestaurant(),
+                        image: Image.asset(
+                          'assets/mc-c.png',
+                          height: 185.0,
+                          fit: BoxFit.cover,
+                        ),
+                      )
                     ],
                   ),
                 ],
               ),
             ),
           ),
-          Container(),
+          Center(
+            child: Container(
+              child: Text('KELNERO',
+                  style: GoogleFonts.righteous(fontSize: 92, color: nnWhite)),
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
